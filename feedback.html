@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="feedback page contain a form for user to leave their feedback, and comment of my page">
+    <link href="style.css" rel="stylesheet">
+    <title>Feedback</title>
+</head>
+
+<body>
+    <header>
+        <h1> <a href="home.html">Study with Me</a> </h1>
+    </header>
+
+    <nav class="navigate">
+        <ul>
+            <li> <a href="home.html"> Home </a> &nbsp;</li>
+            <li> <a href="tools.html"> Tools </a> &nbsp;</li>
+            <li> <a href="tips.html"> Tips </a> &nbsp;</li>
+            <li> <a href="templates.html"> Templates </a> &nbsp;</li>
+            <li> <a href="products.html"> Products </a> &nbsp;</li>
+            <li> <a href="feedback.html"> Feedbacks</a> &nbsp;</li>
+            <li> <a href="aboutMe.html"> About</a> &nbsp;</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Let me know what you want me to do next! </h2>
+        <img id="thanks" src="./photos/thankyou.jpeg" alt="thankyounote">
+        <p>Required fields are marked with an asterisk *</p>
+        <form method="POST" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="Name"> *Your Name: </label>
+            <input type="text" name="Name" id="Name" required="required" placeholder="Enter you full name">
+            <br>
+
+            <label for="Email"> *Your email: </label>
+            <input type="email" name="Email" id="Email" required="required" placeholder="Enter you email">
+            <br>
+
+            <label for="Topic"> *Any topic that you interested in: </label><br>
+            <textarea name="Topic" id="Topic" rows="1" cols="30" required="required"></textarea>
+            <br>
+
+            <p>Do you have any feedback or comment for my Study page?</p>
+
+            <label for="myComments">*Comments</label><br>
+            <textarea name="myComments" id="myComments" rows="2" cols="30" required="required"></textarea>
+            <br>
+
+            <input type="submit" value="Submit">
+
+            <h3>All your feedbacks and comments will help me improve my page</h3>
+        </form>
+    </main>
+
+    <footer>
+        <br> Copyright &copy; 2021 Study with Me <br>
+        <a href="mailto:nnguye60@asu.edu">nnguye60@asu.edu </a>
+    </footer>
+</body>
+
+</html>
